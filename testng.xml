@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test thread-count="5" name="Task2p2">
+        <parameter name="url" value="https://userinyerface.com/"/>
+        <classes>
+            <class name="TestPages">
+                <methods>
+                    <include name="HelpFormTest" />
+                    <include name="timerTest" />
+                    <include name="validPasswordTest" />
+                    <include name="invalidPasswordTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
